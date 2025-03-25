@@ -6,8 +6,13 @@ body {
   font-size: 12px;
   margin: 2em;
   background: #cbf1e4;
-  background-image: url("https://cdn.glitch.global/1500d7f0-a2c8-489c-88a2-d7899293787b/clouds.jpeg?v=1704340625786");
-} 
+  background-image: linear-gradient(
+    black,
+    pink,
+    #cbf1e4
+  ); /* change the background colour here - you can specify a solid colour, a gradiant or an image - you can find HEX codes for colours at https://htmlcolorcodes.com/ */
+  background-image: cover;
+}
 
 /* font used for dropdown menu - edit this*/
 h2 {
@@ -41,6 +46,11 @@ h5 {
   text-align: 20px right;
 }
 
+ .rotate-text {
+            transform: rotate(45deg);
+            display: inline-block; /* Needed for the transform to work correctly */
+        }
+
 /* Style the card for the header/title card */
 .cardTitle {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
@@ -52,8 +62,8 @@ h5 {
   text-align: center;
   font-family: "PT Serif", serif;
   font-size: 1.5em;
-} color: 
-<div class ="cardTitle">
+}
+
 /* Style the card for phone error alerts (do not edit)*/
 .cardError {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
@@ -70,6 +80,8 @@ h5 {
 
 /* Style the card for notes sections */
 .cardNotes {
+  transform: rotate(20deg);
+            display: inline-block; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 60px 20px 40px 20px;
   border-radius: 10px 10px 10px 10px;
@@ -81,7 +93,6 @@ h5 {
   min-height: 375px;
   color: white;
   font-family: "Source Code Pro", monospace;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
 }
 
@@ -123,9 +134,9 @@ h5 {
   min-height: 375px;
   border-radius: 10px 10px 10px 10px;
   text-align: center;
-  background-color: green;
-  color: white;
-  font-family: "PT Serif", serif; /* font for <p> text */
+  background-color: yellow;
+  color: black;
+  font-family: "Imperial script", monospace; /* font for <p> text */
   font-size: 14px;
   text-align: center;
 }
@@ -139,7 +150,6 @@ h5 {
   border-radius: 10px 10px 10px 10px;
   text-align: left;
   background-color: white;
-  color: black; 
 }
 
 /* Style the card for the poem function */

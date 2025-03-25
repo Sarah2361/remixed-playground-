@@ -12,45 +12,45 @@ var speed = 50;
 
 //function for network error message
 const sent1 = [
-  "Do not disturb.",
-  // "Your device is not connected.",
-  // "Make sure '[—]' is turned on and in range.",
-  // "Now discoverable as '[—]'.",
-  // "Connection unsuccessful.",
-  // "Your connection is unstable.",
-  // "Out of range.",
-  // "Unexpected device.",
-  // "Bad connection.",
+  "Your device is not connected.",
+  "Make sure '[—]' is turned on and in range.",
+  "Now discoverable as '[—]'.",
+  "Connection unsuccessful.",
+  "Your connection is unstable.",
+  "Out of range.",
+  "Unexpected device.",
+  "Bad connection.",
 ];
 
 const buttonRetry = document.getElementById("button-network");
 
+// Function to handle the button click and update the text
 function changeResultsError() {
   const paragraph = document.getElementById("networkError");
   paragraph.innerText = getRandomFromList(sent1);
 }
-buttonRetry.addEventListener("click", changeResultsError);
+
 //end of network error function
 
 //function dropdown menu (do not edit this first part)
-function addEval(evalText) {
+function addText(content) {
   const subjectContent = document.getElementById("subject-content");
-  subjectContent.innerText = evalText;
+  subjectContent.innerText = content;
 }
 //when selected in the dropdown menu, the x variables trigger the associated text. Edit the x variables (and make sure to also update them in the index.html file) and edit the associated text/emojis within the quotes
 //think about what use you might have for a dropdown menu: you could have someone select their 'mood' and give them an appropriate song, a bit of good or bad advice, an emoji, etc.
-function dropdownFunction() {
+function dropdownFun() {
   var x = document.getElementById("subject").value;
   if (x === "flighty") {
-    addEval("🛩️🐦🦅🦋🌪️💭");
+    addText("🛩️🐦🦅🦋🌪️💭");
   } else if (x === "vague") {
-    addEval("🥱👽🐙🪼🌘");
+    addText("🥱👽🐙🪼🌘");
   } else if (x === "joyful") {
-    addEval("😀😍😸👾👻🕺");
+    addText("😀😍😸👾👻🕺");
   } else if (x === "cloudy") {
-    addEval("🌦️🌨️🫧🌫️☔⚡🥶");
+    addText("🌦️🌨️🫧🌫️☔⚡🥶");
   } else if (x === "hangry") {
-    addEval("🍟🥨🌮🥗🍱");
+    addText("🍟🥨🌮🥗🍱");
   }
 }
 //end of dropdown function
@@ -58,20 +58,22 @@ function dropdownFunction() {
 //start of haiku function
 //lists of variables: replace all of the 5 and 7 syllable constants in the two arrays below. The more constants you write, the more variety you will have in your poem
 const fiveSyllables = [
-  "creative writing", 
-  "I found myself in",
-  "do you remember",
-  "Think I lost myself",
-  "Goodnight and Goodbye",
-  "how could I forget",
-  "summer and winter",
-  "At least I managed to sleep",
+  "i don't know myself",
+  "the day I went weird",
+  "pizza is a dream",
+  "hand over the cheese",
+  "parmesean is life",
+  "i am so hungry",
+  "where did odie go",
+  "get it your damn self",
   "obey me human",
 ];
 const sevenSyllables = [
   "cheese makes everything better",
+  "I just want to see myself", 
+  "More than I could ever know", 
   "the noodles must be wavey",
-  "something I thought I would try",
+  "nothing left to do but sleep",
   "thinking about lasagne",
   "yuk, no i don't want salad",
 ];
@@ -97,7 +99,6 @@ function changeResults() {
   paragraphEight.innerText = getRandomFromList(sevenSyllables);
   paragraphNine.innerText = getRandomFromList(fiveSyllables);
 }
-buttonHaiku.addEventListener("click", changeResults);
 //end of haiku function
 
 //start of search function
@@ -106,10 +107,9 @@ const textInput = document.getElementById("text-input");
 //search function constants
 //play with Google search function to come up with search terms most relevant to you. Think about how these search terms tell a story. Replace all of the placeholder text below (phrases in red font) with search terms of your own. If you keep the phrases organised alphabetically, you can ensure you have enough results for each word.
 const words = [
-  "rmit timetable",
-  "",
+  "art of war free download",
+  "ask izzy",
   "australian family law issues in the news",
-  "average screen camera nsw", 
 
   "barrister vs lawyer australia",
   "barrister vs solicitor",
@@ -118,8 +118,6 @@ const words = [
   "can i seek to vary my family court order",
   "ccs has no cctv",
   "childcare how expensive",
-  "calculator", 
-  "canvas rmit", 
 
   "delete search history",
   "delusional jealousy",
@@ -129,24 +127,28 @@ const words = [
   "emotional manipulation signs",
 
   "fridge magnets",
-  "face framing for curly hair", 
   
-  "honey blonde balayage on dark hair", 
-  "how to make money fast", 
+  "Gothic novels", 
+  "Hypertext - what is it",
+  "Ice cream truck", 
+  "Jackson 5", 
+  "Kung-Fu Panda", 
+  "Lotus flower", 
+  "Monogram", 
+  "New York", 
+  "Ocean eyes", 
+  "Piano", 
+  "Queen of England", 
+  "Remember me", 
+  "Solitary", 
+  "TikTok", 
+  "Utopia", 
+  "Vikings tv series", 
+  "Whenever wherever", 
+  "Xenophobia meaning", 
+  "Yours Truly Abby Jimenez", 
+  "Zöe Kravitz", 
   
-  "I don't want to know", 
-  
-  "Jerusalem", 
-  
-  "Know me know you", 
-  
-  "Like and comment on recent", 
-  "Meal of the day", 
-  
-  "10 things I hate about you", 
-  "best books of 2025", 
-  
-
 ];
 //search function (do not edit)
 function changeText(e) {
@@ -178,15 +180,15 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "robots, pilgrims, monsters, aliens, fairies, fashion icons, penguins, broken families, displaced animals, right-wing militants, cyborgs".split(
+    "robots, pilgrims, athletes, displaced animals, protesters, cyborgs".split(
       ","
     ),
   verbs =
-    "wander,search, cross, kneel to pray in, avoid, survey, sneak across, meditate in, guide, waltze through, hide in".split(
+    "wander,search, cross, kneel to pray in, avoid, survey, disturb, sneak across, hide in".split(
       ","
     ),
   objects =
-    "the barren plains,the wilted grasslands, vast wastelands,wildernesses unknown,languishing caravan parks, arid deserts, dark caves, military bunkers, sparkling rivieras, a quiet calm ravine, valleys of ash and bone".split(
+    "the barren plains, Australia, the wilted grasslands, vast wastelands,wildernesses unknown,languishing caravan parks, arid deserts, military bunkers, valleys of ash and bone".split(
       ","
     );
 // set up the counter
@@ -241,5 +243,7 @@ function processPoem() {
   if (counter > 15) {
     removeFirstLine();
   }
+  setTimeout(processPoem, 1000);
 }
-window.setInterval(processPoem, 2000);
+// Start the process
+processPoem();
