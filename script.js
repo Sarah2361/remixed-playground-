@@ -24,33 +24,32 @@ const sent1 = [
 
 const buttonRetry = document.getElementById("button-network");
 
-// Function to handle the button click and update the text
 function changeResultsError() {
   const paragraph = document.getElementById("networkError");
   paragraph.innerText = getRandomFromList(sent1);
 }
-
+buttonRetry.addEventListener("click", changeResultsError);
 //end of network error function
 
 //function dropdown menu (do not edit this first part)
-function addText(content) {
+function addEval(evalText) {
   const subjectContent = document.getElementById("subject-content");
-  subjectContent.innerText = content;
+  subjectContent.innerText = evalText;
 }
 //when selected in the dropdown menu, the x variables trigger the associated text. Edit the x variables (and make sure to also update them in the index.html file) and edit the associated text/emojis within the quotes
 //think about what use you might have for a dropdown menu: you could have someone select their 'mood' and give them an appropriate song, a bit of good or bad advice, an emoji, etc.
-function dropdownFun() {
+function dropdownFunction() {
   var x = document.getElementById("subject").value;
   if (x === "flighty") {
-    addText("🛩️🐦🦅🦋🌪️💭");
+    addEval("🛩️🐦🦅🦋🌪️💭");
   } else if (x === "vague") {
-    addText("🥱👽🐙🪼🌘");
+    addEval("🥱👽🐙🪼🌘");
   } else if (x === "joyful") {
-    addText("😀😍😸👾👻🕺");
+    addEval("😀😍😸👾👻🕺");
   } else if (x === "cloudy") {
-    addText("🌦️🌨️🫧🌫️☔⚡🥶");
+    addEval("🌦️🌨️🫧🌫️☔⚡🥶");
   } else if (x === "hangry") {
-    addText("🍟🥨🌮🥗🍱");
+    addEval("🍟🥨🌮🥗🍱");
   }
 }
 //end of dropdown function
@@ -58,8 +57,8 @@ function dropdownFun() {
 //start of haiku function
 //lists of variables: replace all of the 5 and 7 syllable constants in the two arrays below. The more constants you write, the more variety you will have in your poem
 const fiveSyllables = [
-  "i don't know myself",
-  "the day I went weird",
+  "jon you are my pet",
+  "garfield was in the oven",
   "pizza is a dream",
   "hand over the cheese",
   "parmesean is life",
@@ -70,8 +69,6 @@ const fiveSyllables = [
 ];
 const sevenSyllables = [
   "cheese makes everything better",
-  "I just want to see myself", 
-  "More than I could ever know", 
   "the noodles must be wavey",
   "nothing left to do but sleep",
   "thinking about lasagne",
@@ -99,6 +96,7 @@ function changeResults() {
   paragraphEight.innerText = getRandomFromList(sevenSyllables);
   paragraphNine.innerText = getRandomFromList(fiveSyllables);
 }
+buttonHaiku.addEventListener("click", changeResults);
 //end of haiku function
 
 //start of search function
@@ -127,28 +125,6 @@ const words = [
   "emotional manipulation signs",
 
   "fridge magnets",
-  
-  "Gothic novels", 
-  "Hypertext - what is it",
-  "Ice cream truck", 
-  "Jackson 5", 
-  "Kung-Fu Panda", 
-  "Lotus flower", 
-  "Monogram", 
-  "New York", 
-  "Ocean eyes", 
-  "Piano", 
-  "Queen of England", 
-  "Remember me", 
-  "Solitary", 
-  "TikTok", 
-  "Utopia", 
-  "Vikings tv series", 
-  "Whenever wherever", 
-  "Xenophobia meaning", 
-  "Yours Truly Abby Jimenez", 
-  "Zöe Kravitz", 
-  
 ];
 //search function (do not edit)
 function changeText(e) {
@@ -180,15 +156,15 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "robots, pilgrims, athletes, displaced animals, protesters, cyborgs".split(
+    "robots, pilgrims, broken families, displaced animals, right-wing militants, cyborgs".split(
       ","
     ),
   verbs =
-    "wander,search, cross, kneel to pray in, avoid, survey, disturb, sneak across, hide in".split(
+    "wander,search, cross, kneel to pray in, avoid, survey, sneak across, hide in".split(
       ","
     ),
   objects =
-    "the barren plains, Australia, the wilted grasslands, vast wastelands,wildernesses unknown,languishing caravan parks, arid deserts, military bunkers, valleys of ash and bone".split(
+    "the barren plains,the wilted grasslands, vast wastelands,wildernesses unknown,languishing caravan parks, arid deserts, military bunkers, valleys of ash and bone".split(
       ","
     );
 // set up the counter
@@ -243,7 +219,5 @@ function processPoem() {
   if (counter > 15) {
     removeFirstLine();
   }
-  setTimeout(processPoem, 1000);
 }
-// Start the process
-processPoem();
+window.setInterval(processPoem, 1000);
