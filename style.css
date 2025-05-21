@@ -5,7 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   margin: 2em;
-  background: #cbf1e4;
+  background: #33FFC7;
   background-image: linear-gradient(
     black,
     pink,
@@ -46,6 +46,11 @@ h5 {
   text-align: 20px right;
 }
 
+ .rotate-text {
+            transform: rotate(45deg);
+            display: inline-block; /* Needed for the transform to work correctly */
+        }
+
 /* Style the card for the header/title card */
 .cardTitle {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
@@ -75,6 +80,8 @@ h5 {
 
 /* Style the card for notes sections */
 .cardNotes {
+  transform: rotate(20deg);
+            display: inline-block; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 60px 20px 40px 20px;
   border-radius: 10px 10px 10px 10px;
@@ -127,8 +134,8 @@ h5 {
   min-height: 375px;
   border-radius: 10px 10px 10px 10px;
   text-align: center;
-  background-color: green;
-  color: white;
+  background-color: blue;
+  color: yellow;
   font-family: "PT Serif", serif; /* font for <p> text */
   font-size: 14px;
   text-align: center;
