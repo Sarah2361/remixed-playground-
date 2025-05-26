@@ -5,10 +5,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   margin: 2em;
-  background: #cbf1e4;
+  background: #33FFC7;
   background-image: linear-gradient(
-    black,
-    pink,
+    green,
+    blue,
     #cbf1e4
   ); /* change the background colour here - you can specify a solid colour, a gradiant or an image - you can find HEX codes for colours at https://htmlcolorcodes.com/ */
   background-image: cover;
@@ -56,12 +56,13 @@ h5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   border-radius: 10px 10px 10px 10px;
-  background-image: url("https://cdn.glitch.global/1500d7f0-a2c8-489c-88a2-d7899293787b/clouds.jpeg?v=1704340625786");
+  background-image: url("https://cdn.glitch.global/8789d4c5-b724-48c7-931f-f33ca033f9dd/jellies.jpeg?v=1705962220630");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   font-family: "PT Serif", serif;
-  font-size: 1.5em;
+  font-size: 1.5em; 
+  color: white;
 }
 
 /* Style the card for phone error alerts (do not edit)*/
@@ -134,9 +135,9 @@ h5 {
   min-height: 375px;
   border-radius: 10px 10px 10px 10px;
   text-align: center;
-  background-color: yellow;
-  color: black;
-  font-family: "Imperial script", monospace; /* font for <p> text */
+  background-color: blue;
+  color: yellow;
+  font-family: "PT Serif", serif; /* font for <p> text */
   font-size: 14px;
   text-align: center;
 }
@@ -160,7 +161,6 @@ h5 {
   border-radius: 10px 10px 10px 10px;
   text-align: left;
   background-color: #000000;
-  background-image: url("https://cdn.glitch.com/02600171-b43e-46dd-a21e-bfc0b9a82267%2FcatBG.gif?v=1620459338357"); /* replace this gif background with an image of your choosing or create your own gif at giphy.com using a plain background and adding effects or just delete the background-image property and you can set the background-color to what you want (it's currently black)*/
   color: #68d911;
   font-family: "Source Code Pro", monospace;
   font-size: 14px; 

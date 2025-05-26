@@ -12,7 +12,7 @@ var speed = 50;
 
 //function for network error message
 const sent1 = [
-  "Your device is not connected.",
+  "Remixed coding ",
   "Make sure '[—]' is turned on and in range.",
   "Now discoverable as '[—]'.",
   "Connection unsuccessful.",
@@ -42,11 +42,11 @@ function addText(content) {
 function dropdownFun() {
   var x = document.getElementById("subject").value;
   if (x === "flighty") {
-    addText("🛩️🐦🦅🦋🌪️💭");
+    addText("🍜🥩🧀🥓");
   } else if (x === "vague") {
-    addText("🥱👽🐙🪼🌘");
+    addText("🌮🥙🍽️🍴");
   } else if (x === "joyful") {
-    addText("😀😍😸👾👻🕺");
+    addText("🍕🍟🍍🫒🍅🧀");
   } else if (x === "cloudy") {
     addText("🌦️🌨️🫧🌫️☔⚡🥶");
   } else if (x === "hangry") {
@@ -58,22 +58,20 @@ function dropdownFun() {
 //start of haiku function
 //lists of variables: replace all of the 5 and 7 syllable constants in the two arrays below. The more constants you write, the more variety you will have in your poem
 const fiveSyllables = [
-  "i don't know myself",
-  "the day I went weird",
+  "I guess I was wrong",
+  "garfield was in the oven",
   "pizza is a dream",
   "hand over the cheese",
-  "parmesean is life",
-  "i am so hungry",
-  "where did odie go",
+  "i like it when you",
+  "i like to study",
+  "it's ok to be",
   "get it your damn self",
-  "obey me human",
+  "never miss a chance",
 ];
 const sevenSyllables = [
-  "cheese makes everything better",
-  "I just want to see myself", 
-  "More than I could ever know", 
-  "the noodles must be wavey",
-  "nothing left to do but sleep",
+  "i would like to see you more",
+  "get over here and tell me",
+  "everything is better clear",
   "thinking about lasagne",
   "yuk, no i don't want salad",
 ];
@@ -117,7 +115,7 @@ const words = [
 
   "can i seek to vary my family court order",
   "ccs has no cctv",
-  "childcare how expensive",
+  "chatgpt",
 
   "delete search history",
   "delusional jealousy",
@@ -125,30 +123,52 @@ const words = [
 
   "earliest memories as a child",
   "emotional manipulation signs",
+  "eat humble pie", 
 
   "fridge magnets",
+  "Foo Fighters concert", 
   
-  "Gothic novels", 
-  "Hypertext - what is it",
-  "Ice cream truck", 
-  "Jackson 5", 
-  "Kung-Fu Panda", 
-  "Lotus flower", 
-  "Monogram", 
-  "New York", 
-  "Ocean eyes", 
-  "Piano", 
-  "Queen of England", 
-  "Remember me", 
-  "Solitary", 
-  "TikTok", 
-  "Utopia", 
-  "Vikings tv series", 
-  "Whenever wherever", 
-  "Xenophobia meaning", 
-  "Yours Truly Abby Jimenez", 
-  "Zöe Kravitz", 
+  "Google", 
   
+  "How to use Google", 
+  
+  "Innovation meaning", 
+  
+  "J.K.Rowling", 
+  
+  "Kanye West", 
+  
+  "Labour by Paris Paloma", 
+  
+  "Mean girls 1", 
+  
+  "Never say never Justin Bieber", 
+  
+  "Oz lotto results", 
+  
+  "Plagiarism checker", 
+  
+  "Queer meaning in lgbtq", 
+  
+  "Rosalin Franklin", 
+  
+  "Someone help me", 
+  
+  "Tesselaar Tulip Festival", 
+  "Tiktok", 
+  
+  "UP movie", 
+  
+  "Vegemite taste", 
+  
+  "What the hellyante song", 
+  "WIP meaning", 
+  
+  "X-men", 
+  
+  "Yodel", 
+  
+  "Zootopia trailor", 
 ];
 //search function (do not edit)
 function changeText(e) {
@@ -180,15 +200,15 @@ textInput.addEventListener("input", changeText);
 //start of code for poem
 
 const subjects =
-    "robots, pilgrims, athletes, displaced animals, protesters, cyborgs".split(
+    "Aliens, pilgrims, burn victims, displaced animals, right-wing militants, cyborgs".split(
       ","
     ),
   verbs =
-    "wander,search, cross, kneel to pray in, avoid, survey, disturb, sneak across, hide in".split(
+    "wander, analyse, slide into, kneel to pray in, avoid, stare, sprint into, run to".split(
       ","
     ),
   objects =
-    "the barren plains, Australia, the wilted grasslands, vast wastelands,wildernesses unknown,languishing caravan parks, arid deserts, military bunkers, valleys of ash and bone".split(
+    "the water damn,the wilted grasslands, vast wastelands,wildernesses unknown, rainbow road path on mario cart, outback red dirt, military bunkers, valleys of ash and bone".split(
       ","
     );
 // set up the counter
