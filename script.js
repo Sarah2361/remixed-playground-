@@ -12,7 +12,7 @@ var speed = 50;
 
 //function for network error message
 const sent1 = [
-  "Your device is not connected.",
+  "Remixed coding ",
   "Make sure '[—]' is turned on and in range.",
   "Now discoverable as '[—]'.",
   "Connection unsuccessful.",
@@ -42,11 +42,11 @@ function addText(content) {
 function dropdownFun() {
   var x = document.getElementById("subject").value;
   if (x === "flighty") {
-    addText("🛩️🐦🦅🦋🌪️💭");
+    addText("🍜🥩🧀🥓");
   } else if (x === "vague") {
-    addText("🥱👽🐙🪼🌘");
+    addText("🌮🥙🍽️🍴");
   } else if (x === "joyful") {
-    addText("😀😍😸👾👻🕺");
+    addText("🍕🍟🍍🫒🍅🧀");
   } else if (x === "cloudy") {
     addText("🌦️🌨️🫧🌫️☔⚡🥶");
   } else if (x === "hangry") {
