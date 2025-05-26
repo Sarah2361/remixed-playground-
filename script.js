@@ -13,13 +13,10 @@ var speed = 50;
 //function for network error message
 const sent1 = [
   "Remixed coding ",
-  "Make sure '[—]' is turned on and in range.",
-  "Now discoverable as '[—]'.",
-  "Connection unsuccessful.",
-  "Your connection is unstable.",
-  "Out of range.",
-  "Unexpected device.",
-  "Bad connection.",
+  "For such a time as this.",
+  "Glitch is shutting down.",
+  "Why is there no internet connection?!?",
+  "More homework.",
 ];
 
 const buttonRetry = document.getElementById("button-network");
